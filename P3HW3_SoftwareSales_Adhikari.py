@@ -10,15 +10,15 @@ unitPrice = 99
 totalPrice = quantity * unitPrice
 
 # calculations or decision structure
-if 20>quantity>=10:
+if quantity>=10 and quantity <20:
     discount = 0.1 * totalPrice
     totalCost = totalPrice - discount
     print("The total purchased cost with the discount applied is:$",format(totalCost,',.2f'))
-elif 50> quantity >= 20:
+elif quantity >= 20 and quantity < 50:
     discount = 0.2 * totalPrice
     totalCost = totalPrice - discount
     print("The total purchased cost with the discount applied is:$",format(totalCost,',.2f'))
-elif 100>quantity>= 50:
+elif quantity>= 50 and quantity <100:
     discount = 0.3 * totalPrice
     totalCost = totalPrice - discount
     print("The total purchased cost with the discount applied is:$",format(totalCost,',.2f'))
